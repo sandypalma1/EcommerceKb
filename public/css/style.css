@@ -1,0 +1,159 @@
+html,
+body,
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	padding: 10px;
+}
+
+p {
+	font-size: 14px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container-left,
+.container-rigth {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.container-logo {
+	padding: 10px;
+}
+
+.section-data-client,
+.section-table-compra {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.container-info,
+.container-info-factura,
+.container-data-client {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: 25px;
+	padding: 10px;
+	gap: 5px;
+}
+
+.container-info p {
+	text-align: center;
+}
+
+.container-data-client {
+	border-radius: 0;
+}
+
+.container-info-factura {
+	width: 80%;
+	height: 50%;
+	justify-content: center;
+}
+
+.container-info-factura p {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.img-logo {
+	width: 200px;
+	height: auto;
+}
+
+.container-rigth-content-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-data-client-content-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-data-client-item {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.table-header,
+.table-body,
+.table-footer {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.table-header {
+	border-right: 1px solid #000;
+}
+
+.table-header .table-th,
+.table-footer-container .table-th {
+	font-weight: 600;
+}
+
+.table-body {
+	border-top: 0;
+}
+
+.table-th {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+.table-body-container {
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.table-footer-container {
+	border-right: 1px solid #000;
+}
+
+.table-footer {
+	grid-template-columns: repeat(2, 128.7px);
+	justify-content: flex-end;
+}
+
+.table-footer .table-th {
+	border-top: 0;
+	border-bottom: 1px solid #000;
+}
+
+.text-padd {
+	padding-left: 5px;
+}

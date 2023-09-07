@@ -1,0 +1,70 @@
+html,
+body,
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Works for Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.menu-item {
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	font-weight: 700;
+	background-image: linear-gradient(#f8d9b0, #cfc6bc);
+	background-size: 0% 3px;
+	background-repeat: no-repeat;
+	background-position: 50% calc(100% - 0px);
+	transition: background-size 0.5s;
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+.menu-item:hover {
+	background-size: 100% 3px;
+}
+
+.active {
+	background-size: 100% 3px;
+	background-image: linear-gradient(#da8e2c, #da8e2c);
+	animation: fadeIn 1s ease;
+}
+
+.active-item {
+	color: #da8e2c;
+	font-weight: 700;
+}
+
+@keyframes fadeIn {
+	0% {
+		background-size: 0% 3px;
+	}
+}
+
+.css-9li86u-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+	color: #fff;
+	font-weight: 700;
+}
+
+.footer-info {
+	color: #fff;
+}
